@@ -94,7 +94,7 @@ def flatten_list(x: List[List]) -> List:
     return [i for j in x for i in j]
 
 def group_and_aggregate(df: pd.DataFrame, grouper_col: str,
-                        aggregate_col: str):
+                        aggregate_col: str) -> pd.DataFrame:
     """Group a pandas data frame by a single column and aggregate the values of another column
     
     Parameters
